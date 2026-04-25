@@ -82,35 +82,25 @@
 
   .hero-bg {
     position: absolute; inset: 0;
-    background-image: url('/hero-trucks.jpg');
+    background-image: url('/hero-fleet.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    opacity: 0.25;
+    opacity: 1;
   }
   
   .hero-bg::after {
     content: '';
     position: absolute;
     inset: 0;
-    background:
-      radial-gradient(ellipse at 75% 40%, rgba(26,123,107,0.18) 0%, transparent 55%),
-      radial-gradient(ellipse at 5% 90%, rgba(26,97,50,0.12) 0%, transparent 45%),
-      linear-gradient(150deg, rgba(9,22,34,0.8) 0%, rgba(12,30,50,0.8) 60%, rgba(9,22,34,0.8) 100%);
+    background: linear-gradient(135deg, rgba(9,22,34,0.5) 0%, rgba(12,30,50,0.6) 60%, rgba(9,22,34,0.5) 100%);
   }
 
   .hero-grid {
-    position: absolute; inset: 0; opacity: 0.03;
-    background-image: linear-gradient(var(--teal) 1px, transparent 1px),
-                      linear-gradient(90deg, var(--teal) 1px, transparent 1px);
-    background-size: 50px 50px;
+    display: none;
   }
 
   .hero-stripe {
-    position: absolute; right: 0; top: 0; bottom: 0; width: 42%;
-    background: linear-gradient(to right, transparent, rgba(26,123,107,0.06));
-    border-left: 1px solid rgba(26,123,107,0.25);
-    clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
+    display: none;
   }
 
   .hero-rwanda-text {
@@ -989,8 +979,6 @@
   </div>
 </footer>
 
-
-<!-- FLEET PHOTO GALLERY -->
 
 </body>
 </html>
