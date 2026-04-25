@@ -82,11 +82,21 @@
 
   .hero-bg {
     position: absolute; inset: 0;
+    background-image: url('/hero-trucks.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.25;
+  }
+  
+  .hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
     background:
       radial-gradient(ellipse at 75% 40%, rgba(26,123,107,0.18) 0%, transparent 55%),
       radial-gradient(ellipse at 5% 90%, rgba(26,97,50,0.12) 0%, transparent 45%),
-      radial-gradient(ellipse at 50% 0%, rgba(200,168,75,0.06) 0%, transparent 40%),
-      linear-gradient(150deg, #091622 0%, #0C1E32 60%, #091622 100%);
+      linear-gradient(150deg, rgba(9,22,34,0.8) 0%, rgba(12,30,50,0.8) 60%, rgba(9,22,34,0.8) 100%);
   }
 
   .hero-grid {
@@ -611,7 +621,7 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-bg"></div>
+  <div class="hero-bg" style="transform: rotate(90deg);"></div>
   <div class="hero-grid"></div>
   <div class="hero-stripe"></div>
   <div class="hero-rwanda-text">RW</div>
